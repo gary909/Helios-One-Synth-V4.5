@@ -1,7 +1,4 @@
 /*
-
-
-
        /$$   /$$ /$$$$$$$$ /$$       /$$$$$$  /$$$$$$   /$$$$$$         /$$$$$$  /$$   /$$ /$$$$$$$$          
       | $$  | $$| $$_____/| $$      |_  $$_/ /$$__  $$ /$$__  $$       /$$__  $$| $$$ | $$| $$_____/          
       | $$  | $$| $$      | $$        | $$  | $$  \ $$| $$  \__/      | $$  \ $$| $$$$| $$| $$                
@@ -24,16 +21,13 @@
                  /$$  | $$                                                                                    
                 |  $$$$$$/                                                                                    
                  \______/     
-
                                                                                    __ __    ______
                                                                                   / // /   / ____/
                                                                                  / // /_  /___ \  
                                                                                 /__  __/ ____/ /  
                                                                                   /_/ (_)_____/   
-
  // A BlogHoskins Monstrosity @ 2019 / 2020
 // https://bloghoskins.blogspot.com/
-
 /*    v4.5
  *    LFO On/off switch added - using arduino digital pin 3
  *     
@@ -220,7 +214,8 @@ void updateControl(){
   }
   else  // If switch not set to high, run this portion of code instead
   {
-    //LFO not switched on
+  svf.setCentreFreq(0);
+  svf.setResonance(200); 
   }
   //**********************************END*******************************************************************************
   
